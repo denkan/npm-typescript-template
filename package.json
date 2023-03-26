@@ -5,6 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "dev": "ts-node-dev src",
+    "start": "npm run dev",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.(js|ts)\"",
     "lint": "eslint src --ext .js,.ts",
@@ -29,21 +31,20 @@
     "url": "https://github.com/denkan/npm-typescript-template/issues"
   },
   "homepage": "https://github.com/denkan/npm-typescript-template#readme",
-  "devDependencies": {
-    "@types/jest": "^26.0.15",
-    "@typescript-eslint/eslint-plugin": "^4.5.0",
-    "@typescript-eslint/parser": "^4.5.0",
-    "dotenv": "^10.0.0",
-    "eslint": "^7.11.0",
-    "eslint-plugin-jest": "^24.1.0",
-    "jest": "^26.6.0",
-    "prettier": "^2.3.0",
-    "ts-jest": "^26.4.1",
-    "typescript": "^4.0.3"
-  },
   "files": [
     "dist/**/*"
   ],
-  "dependencies": {
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.36.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "ts-jest": "^29.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.2"
   }
 }
